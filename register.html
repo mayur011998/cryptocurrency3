@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giottus Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+        .container {
+            background-color: #181818;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            margin: 40px auto;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #282828;
+            color: #fff;
+        }
+
+        input[type="password"] {
+            position: relative;
+        }
+
+        .password-icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #ccc;
+        }
+
+        button[type="submit"] {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e74c3c;
+        }
+
+    
+        .small-text {
+            font-size: 14px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        .small-text a {
+            color: #ff5733;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTER FOR FREE</h1>
+        <form>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <div class="input-group">
+                <input type="tel" placeholder="+91 Mobile Number">
+                <span class="input-addon">+</span>
+            </div>
+            <input type="email" placeholder="Email: user@gmail.com">
+            <input type="text" placeholder="Referral Code (optional)">
+            <input type="password" placeholder="Password">
+            <i class="password-icon"></i>
+            <button type="submit">Create Account</button>
+        </form>
+        <div class="small-text">Already have an account? <a href="login.html">Login</a></div>
+    </div>
+</body>
+</html>
